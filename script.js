@@ -1,0 +1,71 @@
+import * as jab from "./jablo.js";
+
+const response = await fetch("./questions.json");
+let questions = await response.json();
+questions = jab.shuffle(questions);
+
+const p = jab.get("#p");
+const p1Txt = jab.get("#p1");
+const p2Txt = jab.get("#p2");
+const questionContainer = jab.get("#question-container")
+const questionTxt = jab.get("#question");
+
+const answerButtons = [];
+answerButtons.push(jab.add("button", ".answer", questionContainer));
+answerButtons.push(jab.add("button", ".answer", questionContainer));
+answerButtons.push(jab.add("button", ".answer", questionContainer));
+answerButtons[0].onclick = () => answerClicked(questions[qI].a[0].p);
+answerButtons[1].onclick = () => answerClicked(questions[qI].a[1].p);
+answerButtons[2].onclick = () => answerClicked(questions[qI].a[2].p);
+
+let p1Score = 0;
+let p2Score = 0;
+let player = 1;
+let qI = 0;
+
+answerClicked(0);
+
+function gameWon(winningPlayer) {
+  answerButtons[0].style.display = "none";
+  answerButtons[1].style.display = "none";
+  answerButtons[2].style.display = "none";
+
+  p1Text.style.display = "none";
+  p2Text.style.display = "none";
+
+  questionTxt.innerText = `Player ${winningPlayer + 1} wins!`;
+}
+
+function answerClicked(score) {
+  if (player == 0) {
+    p1Score += score;
+    p1Txt.innerText = `Player 1:\n${p1Score} point${p1Score == 1 ? '' : 's'}!`;
+    if (p1Score >= 20) gameWon(0);
+  } else {
+    p2Score += score;
+    p2Txt.innerText = `Player 2:\n${p2Score} point${p2Score == 1 ? '' : 's'}!`;
+    if (p2Score >= 20) gameWon(1);
+  }
+
+  if (player == 0) player = 1;
+  else player = 0;
+
+  p.innerText = `Player ${player + 1}`;
+
+  qI++;
+  if (qI >= questions.length) {
+    qI = 0;
+    questions = jab.shuffle(questions);
+  }
+
+  questionTxt.innerText = questions[qI].q;
+
+  for (let i = 0; i < 3; i++) {
+    if (questions[qI].a[i].t == null) {
+      answerButtons[i].style.display = "none";
+    } else {
+      answerButtons[i].style.display = "";
+      answerButtons[i].innerText = questions[qI].a[i].t;
+    }
+  }
+}

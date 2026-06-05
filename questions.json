@@ -1,0 +1,34 @@
+[
+  {
+    "q": "Press option 1",
+    "a": [
+      { "t": "Option 1", "p": 1 },
+      { "t": "Option 2", "p": -2 },
+      { "t": "Option 3", "p": -1 }
+    ]
+  },
+  {
+    "q": "Press option 3",
+    "a": [
+      { "t": "Option 1", "p": -2 },
+      { "t": "Option 2", "p": -1 },
+      { "t": "Option 3", "p": 1 }
+    ]
+  },
+  {
+    "q": "Press option 2",
+    "a": [
+      { "t": "Option 1", "p": -2 },
+      { "t": "Option 2", "p": 1 },
+      { "t": null }
+    ]
+  },
+  {
+    "q": "Who won the 1860 election?",
+    "a": [
+      { "t": "Abraham Lincoln", "p": 1 },
+      { "t": "Henry Clay", "p": -2 },
+      { "t": "Stephan Douglas", "p": -1 }
+    ]
+  }
+]
