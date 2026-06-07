@@ -46,5 +46,21 @@
       { "t": "Going to war with the North", "p": -2 },
       { "t": "Using propaganda to remove Abraham Lincoln from presidency", "p": -1 }
     ]
+  },
+  {
+    "q": "What states had seceded by February, 1861?",
+    "a": [
+      { "t": "South Carolina, Texas, Louisiana, Mississippi, Alabama, Florida, Georgia", "p": 1 },
+      { "t": "Texas, Alabama, South Carolina, Mississippi, Georigia, Virginia, Louisiana", "p": -1 },
+      { "t": "New York, Virginia, Louisiana, Texas, Alabama, Florida, Georgia, North Carolina", "p": -5 }
+    ]
+  },
+  {
+    "q": "Who was president before Abraham Lincoln?",
+    "a": [
+      { "t": "James Buchanan", "p": 1 },
+      { "t": "Stephan Douglas", "p": -1 },
+      { "t": "South Carolina", "p": -200 }
+    ]
   }
 ]
