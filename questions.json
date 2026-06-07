@@ -83,7 +83,7 @@
     "q": "What did the seceded states call themselves?",
     "a": [
       { "t": "The Confederacy of America", "p": -1 },
-      { "t": "They didn't have a name", "p": -1 },
+      { "t": "They didn't have a name", "p": -2 },
       { "t": "The Confederate States of America", "p": 1 }
     ]
   },
@@ -91,7 +91,17 @@
     "q": "Who was the president of the Confederacy?",
     "a": [
       { "t": "Jefferson Davis", "p": 1 },
-      { "t": "Stephan Douglas", "p": -1 }
+      { "t": "Stephan Douglas", "p": -1 },
+      { "t": "Abraham Lincoln", "p": -2 }
+    ]
+  },
+  {
+    "q": "How long did the Civil War last?",
+    "a": [
+      { "t": "4 years", "p": 1 },
+      { "t": "Stephan", "p": -10 },
+      { "t": "6 years", "p": -1 },
+      { "t": "5 years", "p": -1 }
     ]
   },
   {
