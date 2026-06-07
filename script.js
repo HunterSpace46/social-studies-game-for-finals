@@ -60,6 +60,7 @@ function answerClicked(score) {
   }
 
   questionTxt.innerText = questions[qI].q;
+  questions[qI].a = jab.shuffle(questions[qI].a);
 
   for (let i = 0; i < 3; i++) {
     if (questions[qI].a[i].t == null) {
