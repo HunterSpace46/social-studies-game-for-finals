@@ -14,9 +14,11 @@ const answerButtons = [];
 answerButtons.push(jab.add("button", ".answer", questionContainer));
 answerButtons.push(jab.add("button", ".answer", questionContainer));
 answerButtons.push(jab.add("button", ".answer", questionContainer));
+answerButtons.push(jab.add("button", ".answer", questionContainer));
 answerButtons[0].onclick = () => answerClicked(questions[qI].a[0].p);
 answerButtons[1].onclick = () => answerClicked(questions[qI].a[1].p);
 answerButtons[2].onclick = () => answerClicked(questions[qI].a[2].p);
+answerButtons[3].onclick = () => answerClicked(questions[qI].a[3].p);
 
 let p1Score = 0;
 let p2Score = 0;
@@ -42,12 +44,12 @@ function answerClicked(score) {
     p1Score += score;
     if (p1Score < 0) p1Score = 0;
     else if (p1Score >= 20) return gameWon(0);
-    p1Txt.innerHTML = `Player 1:<br><span style="color: ${score > 0 ? '#00E000' : score != 0 ? '#FF0000' : '#000000'};">${p1Score} point${p1Score == 1 ? '' : 's'}!<span>`;
+    p1Txt.innerHTML = `Player 1:<br><span style="color: ${score > 0 ? '#00E000' : score != 0 ? 'red' : 'black'};">${p1Score} point${p1Score == 1 ? '' : 's'}!<span>`;
   } else {
     p2Score += score;
     if (p2Score < 0) p2Score = 0;
     else if (p2Score >= 20) return gameWon(1);
-    p2Txt.innerHTML = `Player 2:<br><span style="color: ${score > 0 ? '#00E000' : score != 0 ? '#FF0000' : '#000000'};">${p2Score} point${p2Score == 1 ? '' : 's'}!<span>`;
+    p2Txt.innerHTML = `Player 2:<br><span style="color: ${score > 0 ? '#00E000' : score != 0 ? 'red' : 'black'};">${p2Score} point${p2Score == 1 ? '' : 's'}!<span>`;
   }
   if (player == 0) player = 1;
   else player = 0;
@@ -60,7 +62,7 @@ function answerClicked(score) {
   }
   questionTxt.innerText = questions[qI].q;
   questions[qI].a = jab.shuffle(questions[qI].a);
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < answerButtons.length; i++) {
     if (questions[qI].a[i] == undefined) {
       answerButtons[i].style.display = "none";
     } else {
