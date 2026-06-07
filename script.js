@@ -42,12 +42,12 @@ function answerClicked(score) {
     p1Score += score;
     if (p1Score < 0) p1Score = 0;
     else if (p1Score >= 20) return gameWon(0);
-    p1Txt.innerHTML = `Player 1:<br><span style="color: ${score > 0 ? 'lime' : 'red'};">${p1Score} point${p1Score == 1 ? '' : 's'}!<span>`;
+    p1Txt.innerHTML = `Player 1:<br><span style="color: ${score > 0 ? '#00E000' : score != 0 ? '#FF0000' : '#000000'};">${p1Score} point${p1Score == 1 ? '' : 's'}!<span>`;
   } else {
     p2Score += score;
     if (p2Score < 0) p2Score = 0;
     else if (p2Score >= 20) return gameWon(1);
-    p2Txt.innerHTML = `Player 2:<br><span style="color: ${score > 0 ? 'lime' : 'red'};">${p2Score} point${p2Score == 1 ? '' : 's'}!<span>`;
+    p2Txt.innerHTML = `Player 2:<br><span style="color: ${score > 0 ? '#00E000' : score != 0 ? '#FF0000' : '#000000'};">${p2Score} point${p2Score == 1 ? '' : 's'}!<span>`;
   }
   if (player == 0) player = 1;
   else player = 0;
