@@ -1,6 +1,6 @@
 [
   {
-    "q": "How many times did Abraham Lincoln and Stephan Douglas debate?",
+    "q": "How many times did Abraham Lincoln and Stephan Douglas hold a debate?",
     "a": [
       { "t": "7", "p": 1 },
       { "t": "4", "p": -1 },
@@ -42,13 +42,13 @@
   {
     "q": "What did senator John Crittenden suggest to ease conflict in 1860?",
     "a": [
-      { "t": "Protection of slavery below Arkansas' Northern border", "p": 1 },
-      { "t": "Going to war with the North", "p": -2 },
-      { "t": "Using propaganda to remove Abraham Lincoln from presidency", "p": -1 }
+      { "t": "Protect slavery below Arkansas' Northern border", "p": 1 },
+      { "t": "Go to war with the North", "p": -5 },
+      { "t": "Use propaganda to remove Abraham Lincoln from presidency", "p": -1 }
     ]
   },
   {
-    "q": "What of these states had seceded by February, 1861?",
+    "q": "Which of these states had seceded by February, 1861?",
     "a": [
       { "t": "South Carolina, Texas, Louisiana", "p": 1 },
       { "t": "Alabama, Virginia, South Carolina", "p": -1 },
