@@ -48,11 +48,11 @@
     ]
   },
   {
-    "q": "What states had seceded by February, 1861?",
+    "q": "What of these states had seceded by February, 1861?",
     "a": [
-      { "t": "South Carolina, Texas, Louisiana, Mississippi, Alabama, Florida, Georgia", "p": 1 },
-      { "t": "Texas, Alabama, South Carolina, Mississippi, Georigia, Virginia, Louisiana", "p": -1 },
-      { "t": "New York, Virginia, Louisiana, Texas, Alabama, Florida, Georgia, North Carolina", "p": -5 }
+      { "t": "South Carolina, Texas, Louisiana", "p": 1 },
+      { "t": "Alabama, Virginia, South Carolina", "p": -1 },
+      { "t": "New York, Virginia, Louisiana", "p": -10 }
     ]
   },
   {
