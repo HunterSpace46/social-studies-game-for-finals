@@ -62,5 +62,13 @@
       { "t": "Stephan Douglas", "p": -1 },
       { "t": "South Carolina", "p": -200 }
     ]
+  },
+  {
+    "q": "Abraham Lincoln was the ___ president of the United States",
+    "a": [
+      { "t": "16th", "p": 1 },
+      { "t": "17th", "p": -1 },
+      { "t": "14th", "p": -1 }
+    ]
   }
 ]
