@@ -30,5 +30,13 @@
       { "t": "Henry Clay", "p": -2 },
       { "t": "Stephan Douglas", "p": -1 }
     ]
+  },
+  {
+    "q": "When, and what state seceded from the Union first?",
+    "a": [
+      { "t": "1860, South Carolina", "p": 1 },
+      { "t": "1862, Georgia", "p": -1 },
+      { "t": "1859, New York", "p": -200 }
+    ]
   }
 ]

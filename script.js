@@ -42,10 +42,12 @@ function answerClicked(score) {
     p1Score += score;
     p1Txt.innerText = `Player 1:\n${p1Score} point${p1Score == 1 ? '' : 's'}!`;
     if (p1Score >= 20) return gameWon(0);
+    else if (p1Score <= 0) p1Score = 0;
   } else {
     p2Score += score;
     p2Txt.innerText = `Player 2:\n${p2Score} point${p2Score == 1 ? '' : 's'}!`;
     if (p2Score >= 20) return gameWon(1);
+    else if (p2Score <= 0) p2Score = 0;
   }
 
   if (player == 0) player = 1;
