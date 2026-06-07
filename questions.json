@@ -38,5 +38,13 @@
       { "t": "1862, Georgia", "p": -1 },
       { "t": "1859, New York", "p": -200 }
     ]
+  },
+  {
+    "q": "What did senator John Crittenden suggest to ease conflict in 1860?",
+    "a": [
+      { "t": "Protection of slavery below Arkansas' Northern border", "p": 1 },
+      { "t": "Going to war with the North", "p": -2 },
+      { "t": "Using propaganda to remove Abraham Lincoln from presidency", "p": -1 }
+    ]
   }
 ]
