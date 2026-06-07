@@ -70,5 +70,13 @@
       { "t": "17th", "p": -1 },
       { "t": "14th", "p": -1 }
     ]
+  },
+  {
+    "q": "What battle began the Civil War?",
+    "a": [
+      { "t": "The Battle of Fort Sumter", "p": 1 },
+      { "t": "The Bear Flag Revolt", "p": -1 },
+      { "t": "The Battle of Gettysburg", "p": -1 }
+    ]
   }
 ]

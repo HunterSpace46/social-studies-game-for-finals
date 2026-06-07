@@ -15,10 +15,12 @@ answerButtons.push(jab.add("button", ".answer", questionContainer));
 answerButtons.push(jab.add("button", ".answer", questionContainer));
 answerButtons.push(jab.add("button", ".answer", questionContainer));
 answerButtons.push(jab.add("button", ".answer", questionContainer));
+answerButtons.push(jab.add("button", ".answer", questionContainer));
 answerButtons[0].onclick = () => answerClicked(questions[qI].a[0].p);
 answerButtons[1].onclick = () => answerClicked(questions[qI].a[1].p);
 answerButtons[2].onclick = () => answerClicked(questions[qI].a[2].p);
 answerButtons[3].onclick = () => answerClicked(questions[qI].a[3].p);
+answerButtons[4].onclick = () => answerClicked(questions[qI].a[4].p);
 
 let p1Score = 0;
 let p2Score = 0;
