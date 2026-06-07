@@ -1,26 +1,26 @@
 [
   {
-    "q": "Press option 1",
+    "q": "How many times did Abraham Lincoln and Stephan Douglas debate?",
     "a": [
-      { "t": "Option 1", "p": 1 },
-      { "t": "Option 2", "p": -2 },
-      { "t": "Option 3", "p": -1 }
+      { "t": "7", "p": 1 },
+      { "t": "4", "p": -1 },
+      { "t": "9", "p": -1 }
     ]
   },
   {
-    "q": "Press option 3",
+    "q": "Which party was centered around it's opposition to slavery?",
     "a": [
-      { "t": "Option 1", "p": -2 },
-      { "t": "Option 2", "p": -1 },
-      { "t": "Option 3", "p": 1 }
+      { "t": "Federalists", "p": -2 },
+      { "t": "Democrats", "p": -1 },
+      { "t": "Republicans", "p": 1 }
     ]
   },
   {
-    "q": "Press option 2",
+    "q": "Which polital party nominated John Breckinridge for the election of 1860?",
     "a": [
-      { "t": "Option 1", "p": -2 },
-      { "t": "Option 2", "p": 1 },
-      { "t": null }
+      { "t": "Republicans", "p": -1 },
+      { "t": "Democrats", "p": -1 },
+      { "t": "Constitutional Unionists", "p": 1 }
     ]
   },
   {
