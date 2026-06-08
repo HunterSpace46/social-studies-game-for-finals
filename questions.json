@@ -170,7 +170,7 @@
     ]
   },
   {
-    "q": "What was plan did Union General Winfield Scott propose?",
+    "q": "What plan did Union General Winfield Scott propose?",
     "a": [
       { "t": "The Anaconda Plan", "p": 1 },
       { "t": "Operation Stephan", "p": -10 },
