@@ -22,6 +22,8 @@ answerButtons[2].onclick = () => answerClicked(questions[qI].a[2].p);
 answerButtons[3].onclick = () => answerClicked(questions[qI].a[3].p);
 answerButtons[4].onclick = () => answerClicked(questions[qI].a[4].p);
 
+const winningScore = 10;
+
 let p1Score = 0;
 let p2Score = 0;
 let player = 1;
@@ -45,12 +47,12 @@ function answerClicked(score) {
   if (player == 0) {
     p1Score += score;
     if (p1Score < 0) p1Score = 0;
-    else if (p1Score >= 20) return gameWon(0);
+    else if (p1Score >= winningScore) return gameWon(0);
     p1Txt.innerHTML = `Player 1:<br><span style="color: ${score > 0 ? '#00E000' : score != 0 ? 'red' : 'black'};">${p1Score} point${p1Score == 1 ? '' : 's'}!<span>`;
   } else {
     p2Score += score;
     if (p2Score < 0) p2Score = 0;
-    else if (p2Score >= 20) return gameWon(1);
+    else if (p2Score >= winningScore) return gameWon(1);
     p2Txt.innerHTML = `Player 2:<br><span style="color: ${score > 0 ? '#00E000' : score != 0 ? 'red' : 'black'};">${p2Score} point${p2Score == 1 ? '' : 's'}!<span>`;
   }
   if (player == 0) player = 1;
