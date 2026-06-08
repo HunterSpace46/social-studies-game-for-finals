@@ -16,7 +16,7 @@
     ]
   },
   {
-    "q": "Which polital party nominated John Breckinridge for the election of 1860?",
+    "q": "Which political party nominated John Breckinridge for the election of 1860?",
     "a": [
       { "t": "Republicans", "p": -1 },
       { "t": "Democrats", "p": -1 },
